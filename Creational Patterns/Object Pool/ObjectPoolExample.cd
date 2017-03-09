@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="The Client gets and returns a shopping cart from the Market's CartPool">
+    <Position X="5.935" Y="2.475" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="If there are carts in the cart pool they will be released to the clients, otherwise new carts will be created">
+    <Position X="1.51" Y="0.55" Height="0.992" Width="1.7" />
+  </Comment>
+  <Class Name="ObjectPoolExample.CartsPool">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="CartsPool" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAQAAAAAAAAAAAEAAAoAAgAAAA=</HashCode>
+      <FileName>CartsPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectPoolExample.Cart">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Cart" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAg=</HashCode>
+      <FileName>Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectPoolExample.HyperMarket">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="HyperMarket" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>HyperMarket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CartsPool" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ObjectPoolExample.Grocery">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="Grocery" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Groceries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectPoolExample.Client">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="Client" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAIAAQAAgAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ObjectPoolExample.Car">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="Car" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

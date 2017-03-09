@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="EuropeanDash &amp; AmericanDash are adapters translating the speed read from the CarComputer to a human readable format according to local metrics">
+    <Position X="4.759" Y="2.359" Height="1.308" Width="1.708" />
+  </Comment>
+  <Comment CommentText="ISpeed is the interface the Driver understands">
+    <Position X="4.75" Y="1.75" Height="0.475" Width="1.7" />
+  </Comment>
+  <Class Name="AdapterPatternExample.AmericanDash">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AmericanDash.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.333" />
+  </Class>
+  <Class Name="AdapterPatternExample.EuropeanDash">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EuropeanDash.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.108" />
+  </Class>
+  <Class Name="AdapterPatternExample.JapanCarComputer">
+    <Position X="3.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JapanCarComputer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdapterPatternExample.Driver">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="EuropeanDash" Type="AdapterPatternExample.EuropeanDash">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.327" Y="0.518" Height="0.182" Width="1.187" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="AmericanDash" Type="AdapterPatternExample.AmericanDash">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.282" Y="0.51" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Driver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EuropeanDash" />
+      <Property Name="AmericanDash" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AdapterPatternExample.Dash">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <AssociationLine Name="computer" Type="AdapterPatternExample.JapanCarComputer">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.093" Y="-0.265" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dash.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="computer" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="AdapterPatternExample.ISpeed">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpeed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

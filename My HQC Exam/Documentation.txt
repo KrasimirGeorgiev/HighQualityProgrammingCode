@@ -1,0 +1,45 @@
+Please Open With Sublime to see correct new lines
+
+Design pattern: Factory Method
+	* RequestParser class is a factory for requests
+
+Design pattern: Strategy
+	* 
+
+Design pattern: Template Method
+	* 
+	* 
+
+Design pattern: Chain of Responsibility
+	* The RequestProccessor Class implements the Chain of Responsibility pattern with the help of a Queue representing the actual chain
+
+Design pattern: Decorator
+	* 
+
+Found bugs:
+	* The server should return 501 NotImplemented with GET / HTTP/3.0
+	* When a empty line was entered the Exception (NullReferenceException) was not handled (not caught)
+	* Possible bug: The Proccess Method in ResponeProvder compares incoming request Method (GET, OPTIONS etc.) by making them lowercase, none of the examples provided use any syntax other than all Upercase leters for the request method name 
+
+Found bottleneck:
+	* 
+
+Single responsibility principle
+	* Single Responsibility is achieved in the Response provider where initialy there was a Parse Method which was creating a request and also in the Proccess Method there was huge if else logic which was moved to separate handler class 
+
+Open/closed principle
+	* Many key classes like the ResponseProvider Class Can be extended without changing them internally, because they consume Interfaces in the consturctor parameters which is providing a way to alter the algorithms the class uses to achieve a certain product by passing an object/objects implementing the intefrace
+
+Liskov substitution principle
+	* In the method ProccessRequest (in the Class RequestProccessor) the Liskov Substitution Principle can be observed. The method is 
+        /// Proccessing request through polymorfism calling handler.Handle() where handler is 
+        /// a successor of an interface 
+
+Interface segregation principle
+	* Interfaces used/created through the refactoring of the application are kept compact with only the
+	key methods and properties needed by the concrete interface implementation and without unnecessary and uneeded components
+
+Dependency inversion principle
+	* Dependency inversion was acheived in many methods thorugh exposing the key class components in the class constructor arguments, where they are vissible for the client
+
+Removed Middle-man WebServerConsole5.cs

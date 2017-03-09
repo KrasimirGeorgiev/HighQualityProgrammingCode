@@ -1,0 +1,17 @@
+{
+  "name": "coffee-decoration",
+  "version": "1.0.0",
+  "description": "A demo for structural design patterns - Decorator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^1.2.2"
+  }
+}

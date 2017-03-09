@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 1 Quality Methods", "High Quality Methods\Task 1 Quality Methods.csproj", "{C041AAA8-7BA0-4385-A678-1D9003C1952D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 1", "Task 1", "{D9E20700-589F-4369-A5D6-9EEB7055E768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 2", "Task 2", "{FA19F1E8-8862-4AAE-84EE-C876825842E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 – Calculation Problem", "Problem 1 – Calculation Problem\Problem 1 – Calculation Problem.csproj", "{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analyzers", "Analyzers", "{BC7F93CA-4C8C-456C-99D6-9530490685F7}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionRuleset.ruleset = SolutionRuleset.ruleset
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C041AAA8-7BA0-4385-A678-1D9003C1952D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C041AAA8-7BA0-4385-A678-1D9003C1952D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C041AAA8-7BA0-4385-A678-1D9003C1952D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C041AAA8-7BA0-4385-A678-1D9003C1952D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C041AAA8-7BA0-4385-A678-1D9003C1952D} = {D9E20700-589F-4369-A5D6-9EEB7055E768}
+		{EFE80E46-D91D-4D2E-B23F-BF5551DF04E0} = {FA19F1E8-8862-4AAE-84EE-C876825842E0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿Bottleneck description: --------------------
+#1: The original `WriteLine` method in `Engine` was perfoming unecessary proccessing most notablly `Thread.Sleep(350);` which halts the program 
+for that ammount of milliseconds
+
+
+Bug reports: --------------------
+Format: #Bug number - Class name - Bug description
+Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows when you try to add more than 2.1 billion dollars.
+--------
+#1 - `CreateStudentCommand` did not implement the ICommand interface and the engine could not create sutdents
+#2 - The `TecherAddMarkCommand` was selecting the wrong teacher because it used the student id 
+#3 - Nothing was output when the student had no grades - corrected to show the right message
+#4 - There were missing grade below the 8th grade

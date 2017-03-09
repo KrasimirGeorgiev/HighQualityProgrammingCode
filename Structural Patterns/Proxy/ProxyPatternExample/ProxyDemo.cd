@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProxyPatternExample.BasicProxy">
+    <Position X="3.25" Y="2.5" Width="1.75" />
+    <Members>
+      <Field Name="repository" Hidden="true" />
+      <Field Name="rndGenerator" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Repository" Type="ProxyPatternExample.CoolStuffRepo">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.118" Y="0.052" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAGIAAAADAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>BasicProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Repository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.925" />
+  </Class>
+  <Class Name="ProxyPatternExample.CoolStuffRepo">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoolStuffRepo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.008" />
+  </Class>
+  <Class Name="ProxyPatternExample.UserOfStuff">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="BasicProxy" Type="ProxyPatternExample.BasicProxy">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.323" Y="1.202" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserOfStuff.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BasicProxy" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="ProxyPatternExample.IDemand">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDemand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
